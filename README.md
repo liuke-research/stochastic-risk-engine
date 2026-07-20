@@ -329,4 +329,10 @@ Possible future improvements:
 
 # Author
 
-Research-oriented quantitative finance project exploring stochastic dynamics, market instability, and tail risk modeling.
+**刘珂 (Ke Liu)**  
+
+PhD Candidate in Mathematics, National University of Defense Technology (NUDT)  
+
+Email: 15030368689@163.com  
+
+GitHub: https://github.com/liuke-research/stochastic-risk-engine
