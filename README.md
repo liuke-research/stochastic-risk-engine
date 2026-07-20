@@ -310,7 +310,128 @@ stochastic-risk-engine/
 - Pandas
 - Matplotlib
 
+# Quick Start
 
+## 1. Clone Repository
+
+Clone the repository from GitHub:
+
+```bash
+git clone https://github.com/liuke-research/stochastic-risk-engine.git
+
+cd stochastic-risk-engine
+```
+
+## 2. Install Dependencies
+
+It is recommended to create a virtual environment before installation:
+
+```bash
+conda create -n stochastic-risk python=3.10
+
+conda activate stochastic-risk
+
+pip install -r requirements.txt
+```
+
+## 3. Run the Risk Engine
+
+Run the main program:
+
+```bash
+python main.py
+```
+
+The engine will automatically:
+
+- Load HS300 historical market data.
+- Construct high-dimensional market state representations.
+- Perform Harris ergodic dynamics analysis.
+- Estimate shock recovery half-life.
+- Compute Ruelle–Perron–Frobenius (RPF) spectral stability.
+- Evaluate DV-inspired large deviation risk.
+- Generate Tail Risk Index and rolling risk monitoring results.
+
+## 4. Example Output
+
+A typical execution output is:
+
+```text
+======================================
+   HS300 STOCHASTIC RISK ENGINE
+======================================
+
+Market Dataset:
+HS300 Index
+
+Samples:
+5821
+
+State Dimension:
+(5811, 7)
+
+
+Mixing Rate (Harris):
+0.010455
+
+
+Shock Half-life:
+66.28 days
+
+
+Spectral Gap (RPF):
+0.439765
+
+
+DV Tail Risk Rate:
+0.999997
+
+
+Tail Risk Index:
+0.694556
+
+
+Market Regime:
+stable regime
+
+======================================
+```
+
+## 5. Generated Results
+
+After execution, the engine produces:
+
+```
+HS300_risk_series.csv
+```
+
+containing rolling risk indicators:
+
+```
+Date
+
+Mixing Rate
+
+Shock Half-life
+
+Spectral Gap
+
+DV Risk Rate
+
+Tail Risk Index
+
+Market Regime
+```
+
+Visualization results include:
+
+```
+tail_risk_curve.png
+
+risk_regime_validation.png
+```
+
+which illustrate the evolution of market stress and identified risk regimes.
 ---
 
 # Future Extensions
