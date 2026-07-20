@@ -308,7 +308,6 @@ stochastic-risk-engine/
 - Python
 - NumPy
 - Pandas
-- SciPy
 - Matplotlib
 
 
